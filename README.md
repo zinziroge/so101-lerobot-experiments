@@ -105,9 +105,11 @@ cd path\to\lerobot
 
 | 実験 | データセット |
 |---|---|
-| 1 | [zinziroge/sp101_pick_the_block_20261017_115300](https://huggingface.co/datasets/zinziroge/sp101_pick_the_block_20261017_115300) |
-| 2 | 【TODO】`zinziroge/so101_sort_yellow_blue`（未公開） |
-| 3 | 【TODO】`zinziroge/so101_sort_language`（未公開） |
+| 1 | [zinziroge/sp101_pick_the_block_20261017_115300](https://huggingface.co/datasets/zinziroge/sp101_pick_the_block_20261017_115300)（42 エピソード） |
+| 2 | [zinziroge/so101_sort_yellow_blue](https://huggingface.co/datasets/zinziroge/so101_sort_yellow_blue)（120 エピソード） |
+| 3 | [zinziroge/so101_sort_language](https://huggingface.co/datasets/zinziroge/so101_sort_language)（90 エピソード） |
+
+データセットの中身は [LeRobot Dataset Visualizer](https://huggingface.co/spaces/lerobot/visualize_dataset) で確認できる。
 
 ## 結果（概要）
 
