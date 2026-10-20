@@ -1,0 +1,11 @@
+# 学習結果・データセット・モデル（Hugging Face Hub で管理する）
+outputs/
+wandb/
+*.parquet
+*.mp4
+*.safetensors
+
+# OS / エディタ
+Thumbs.db
+.DS_Store
+.vscode/

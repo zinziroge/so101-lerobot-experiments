@@ -1,0 +1,16 @@
+lerobot-rollout `
+  --strategy.type=episodic `
+  --policy.path=outputs/train/act_so101_pick_the_block_v2/checkpoints/last/pretrained_model `
+  --robot.type=so101_follower `
+  --robot.port=COM7 `
+  --robot.id=my_follower `
+  --robot.cameras='{wrist: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: MJPG}, top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: MJPG}}' `
+  --task="Grab the block" `
+  --device=cuda `
+  --display_data=true `
+  --dataset.repo_id=zinziroge/rollout_act_so101_pick_the_block_v2 `
+  --dataset.single_task="Grab the block" `
+  --dataset.num_episodes=10 `
+  --dataset.episode_time_s=20 `
+  --dataset.reset_time_s=15 `
+  --dataset.push_to_hub=false
