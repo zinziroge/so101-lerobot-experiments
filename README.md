@@ -93,6 +93,16 @@ cd path\to\lerobot
 
 記録時のキー操作：→ 次のエピソード / ← 撮り直し / Esc 終了
 
+### 評価動画の作成（[scripts/tools](scripts/tools)）
+`rollout_*_record.ps1` で記録したデータセットから、top と wrist の映像を横に並べ、指示文・カメラ名・エピソード番号・成功/失敗を書き込んだ動画を作る（ffmpeg が必要）。
+
+```powershell
+python scripts\tools\make_rollout_video.py `
+    $env:USERPROFILE\.cache\huggingface\lerobot\zinziroge\rollout_smolvla_blue_small_last_20261020_174609 `
+    exp3_blue_small_top_wrist.mp4 --success 0
+```
+`--success` には成功したエピソードの番号（0 始まり）を指定する。それ以外は FAIL と表示される。
+
 ## 学習済みモデル（Hugging Face Hub）
 
 | 実験 | モデル |
